@@ -3,7 +3,7 @@
 
 $repositories = <<-SCRIPT
 tee <<SCRIPT>/etc/apt/sources.list
-deb http://192.168.44.1:3142/deb.debian.org/debian stretch main contrib non-free
+deb http://192.168.44.1:3142/deb.debian.org/debian buster main contrib non-free
 SCRIPT
 
 Vagrant.configure("2") do |config|
