@@ -7,7 +7,7 @@ deb http://192.168.44.1:3142/deb.debian.org/debian stretch main contrib non-free
 SCRIPT
 
 Vagrant.configure("2") do |config|
-  config.vm.box = "debian/stretch64"
+  config.vm.box = "debian/buster64"
   config.vm.box_check_update = false
   config.vm.synced_folder ".", "/vagrant", disabled: true
 
