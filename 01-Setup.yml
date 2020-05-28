@@ -1,0 +1,16 @@
+---
+- hosts: all
+  become: True
+  tasks:
+  - name: install pip with apt
+    apt:
+      name: python-pip
+      state: latest
+  - name: install packet and netaddr pip packages
+    pip:
+      name: {{ item }}
+      state: present
+    loop:
+      - netaddr
+      - packet-python
+
